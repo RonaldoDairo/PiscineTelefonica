@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/*FOOTER*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+ul li {
+    list-style-type: none;
+    margin-left: 2rem;
+    font-size: 25px;
+}
+
+/*Elementos en el header*/
+
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden
+}
+header:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 25;
+}
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 30;
+    background: linear-gradient(to bottom, rgba( 0, 0, 0, 0.05), transparent)
+}
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    max-width: 70rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+.logo{
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.logo span{
+    font-weight: 300;
+}
+.hamburger-menu{
+    width: 1.55rem;
+    height: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.bar{
+    position: relative;
+    width: 1.2rem; 
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.bar:before, .bar:after{
+    content: '';
+    position: absolute;
+    width: 1.55rem;
+    height: 3px;
+    right: 0;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.bar:before{
+    transform: translateY(-8px);
+}
+.bar:after{
+    transform: translateY(8px);
+}
+.mountain1{
+    position: absolute;
+    bottom: -100px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+}
+.sky{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    bottom: 70px;
+}
+.logoAva{
+    display: flex;
+    position: absolute;
+    margin-top: 5rem;
+    width: 400px;
+    height: 400px;
+    z-index: 100;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Section 1, 2 y 3*/
+
+section{
+    width: 100%;
+    background-color: #0fb0a9;
+    position: relative;
+}
+section img{
+    width: 100%;
+}
+.shadow{
+    position: absolute;
+    bottom: 100%;
+    height: 300px;
+    width: 100%;
+    left: 0;
+    z-index: 20;
+    background: linear-gradient(to top, #0fb0a9, transparent);
+}
+.opacity{
+    opacity: 0;
+}
+
+/*Section 1*/
+section .container0{
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 100vh;
+    color: white;
+}
+.container0 > {
+    margin: 0.5rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: justify;
+    min-height: 100vh;
+}
+.content{
+    color: #fff;
+    transform: translateY(-50px);
+}
+.title0{
+    font-weight: 1000;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    padding-bottom: .5rem;
+    position: relative;
+    color: #fff;
+}
+.border0{
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #0fb0a9;
+    bottom: 0;
+    left: 0;
+}
+.text0 {
+    font-size: 25px;
+    text-align: justify;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+.imgContainer0{
+    transform: translateY(20px);
+}
+
+/*Section 2*/
+section .container1{
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container1{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: white;
+}
+.title1{
+    font-weight: 1000;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    padding-bottom: .5rem;
+    position: relative;
+    color: #fff;
+}
+.border1{
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #0fb0a9;
+    bottom: 0;
+    left: 0;
+}
+.text1 {
+    font-size: 25px;
+    text-align: justify;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+.imgContainer1{
+    transform: translateY(20px);
+}
+
+/*Section 3*/
+section .container2{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: white;
+}
+.container2 > *{
+    margin: 0.5rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: justify;
+    min-height: 100vh;
+    background-color: #263067;
+    text-align: center;
+}
+.title2{
+    font-weight: 1000;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-left: 0;
+    padding-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+}
+.border2{
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #0fb0a9;
+    bottom: 0;
+    left: 0;
+}
+.text2 {
+    font-size: 25px;
+    text-align: center;;
+    margin-bottom: .5rem;
+}
+.text2_1 {
+    font-size: 15px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOOTER*/
+
+.footer-distributed{
+    background: #666;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+}
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+/* Footer left */
+
+.footer-distributed .footer-left{
+    width: 40%;
+}
+/* The company logo */
+.footer-distributed h3{
+    color:  #ffffff;
+    font: normal 36px 'Open Sans', cursive;
+    margin: 0;
+}
+.footer-distributed h3 span{
+    color:  lightseagreen;
+}
+/* Footer links */
+.footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+.footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    font-weight:400;
+    text-decoration: none;
+    color:  inherit;
+}
+.footer-distributed .footer-company-name{
+    color:  #222;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+/* Footer Center */
+.footer-distributed .footer-center{
+    width: 35%;
+}
+.footer-distributed .footer-center i{
+    background-color:  #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+.footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+}
+.footer-distributed .footer-center p{
+    display: inline-block;
+    color: #ffffff;
+    font-weight:400;
+    vertical-align: middle;
+    margin:0;
+}
+.footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+}
+.footer-distributed .footer-center p a{
+    color:  lightseagreen;
+    text-decoration: none;;
+}
+.footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight:300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+.footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+/* Footer Right */
+.footer-distributed .footer-right{
+    width: 20%;
+}
+.footer-distributed .footer-company-about{
+    line-height: 20px;
+    color:  #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+.footer-distributed .footer-company-about span{
+    display: block;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.footer-distributed .footer-icons{
+    margin-top: 25px;
+}
+.footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 850px) {
+    .footer-distributed{
+    font: bold 14px sans-serif;
+    }
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+    }
+    .footer-distributed .footer-center i{
+    margin-left: 0;
+    }
+}
+
+
+@media (max-width: 850px){
+    section .container0{
+        grid-template-columns: 1fr;
+    }
+    section .container1{
+        grid-template-columns: 1fr;
+    }
+    section .container2{
+        grid-template-columns: 1fr;
+    }
+    ul li {
+        list-style-type: none;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+        font-size: 17px;
+    }
+    .title0{
+        font-weight: 1000;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+        padding-bottom: .5rem;
+        position: relative;
+        color: #fff;
+    }
+    .text0 {
+        font-size: 19px;
+        text-align: justify;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 2rem;
+    }
+}

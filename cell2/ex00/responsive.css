@@ -1,0 +1,21 @@
+div{
+    display: flex;
+    flex-direction: row;
+   
+}
+.first{
+    background-color:#72994F;
+    border-right: black 1px solid;
+}
+.second{
+    
+    background-color: #F6BE76;
+    border-left: black 1px solid;
+}
+table, thead, td {
+
+border: 1px solid black;
+border-collapse: collapse;
+height: 100vh;
+width: 158.5rem;
+}

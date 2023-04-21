@@ -1,0 +1,33 @@
+body{
+    margin: 0 auto;
+}
+.backgound{
+    margin: 0 auto;
+    height: 30rem;
+    width: 30rem;
+    background-color: rgb(64, 100, 10);
+}
+.backgound :active{
+    background-color: rgb(146, 32, 32);
+    height: 30rem;
+    width: 30rem;
+}
+p{
+    cursor: pointer;
+}
+
+#zona {  
+    display: flex;
+    margin: 0 auto;
+    width: 480px;
+    height: 200px;
+    background-color: beige;  
+    color: grey;  
+    text-align: center;  
+    font-size: 250%;  
+    }  
+
+button{  
+        height:50px;  
+        width:150px;  
+   } 

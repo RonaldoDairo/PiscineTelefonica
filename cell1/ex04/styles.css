@@ -1,0 +1,37 @@
+body{
+    background-color: #E689CC ;
+}
+.titulo{
+    text-align: center;
+    color: white;
+    
+}
+.image1{
+    position: relative;
+    width: 78.5rem;
+    height: 60rem;
+}
+.image2{
+    height: 60rem;
+    width: 78.5rem;
+
+    
+}
+a{
+    font-size: 20px;
+    margin-left:25rem ;
+}
+.url2 {
+    margin-left:75rem ;
+    font-size: 20px;
+}
+.separation{
+    height: 6px;
+    width: 100% ;
+    background-color: black;
+}
+.copyright{
+    text-align: right;
+    font-size: 20px;
+    font-family: monospace;
+}

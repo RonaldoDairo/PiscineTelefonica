@@ -1,0 +1,20 @@
+
+
+
+.container{
+    background-color: #a9a9cd;
+}
+
+
+div#conin {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+ul { list-style: none ; 
+    
+}
+li::before{
+	content:"#";
+	margin-right:8px;
+}

@@ -1,0 +1,37 @@
+#globo {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: red;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  #globo:hover {
+    transform: scale(1.2);
+  }
+  
+  #globo:active {
+    width: 210px;
+    height: 210px;
+  }
+  
+  #globo.explotado {
+    width: 200px;
+    height: 200px;
+    animation: explotar 0.5s linear;
+    background-color: red;
+  }
+  
+  @keyframes explotar {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(0);
+    }
+}

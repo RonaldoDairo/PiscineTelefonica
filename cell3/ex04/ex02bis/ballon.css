@@ -8,10 +8,10 @@
     cursor: pointer;
   }
   
-  #globo:hover {
+  /* #globo:hover {
     transform: scale(1.2);
   }
-  
+   */
   #globo:active {
     width: 210px;
     height: 210px;

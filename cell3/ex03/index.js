@@ -33,7 +33,7 @@ function addDeleteBtn() {
     ul.removeChild(item);
 
     const items = document.querySelectorAll("li");
-    confirm( "Do you want delete this task ", item)
+    confirm( "Do you want delete this task ")
     if (items.length === 0) {
       empty.style.display = "block";
     }

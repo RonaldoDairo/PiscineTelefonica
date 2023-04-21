@@ -3,7 +3,7 @@ function mensaje() {
     alert(" Please, use me... ");
     
    }
-   setInterval(mensaje,3000);
+   setInterval(mensaje,30000);
 function display(val) {
        $('#result').val(function(i, valActual) {
           return valActual + val;
